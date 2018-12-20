@@ -15,14 +15,14 @@ export function configure(newOptions: Object) {
 export function resolveMatch(match: string) {
   if (match.endsWith('S')) match = match.substring(0, match.length - 1);
 
-  const hasS = match.endsWith('s');
-  const singularMatch = hasS ? match.substring(0, match.length - 1) : match;
+  const endsWithS = match.endsWith('s');
+  const singularMatch = endsWithS ? match.substring(0, match.length - 1) : match;
 
   const doubleStart = singularMatch.startsWith('__');
   const doubleEnd = singularMatch.endsWith('__');
 
   if (doubleStart && doubleEnd) return singularMatch;
-  if (doubleStart && !doubleEnd) return singularMatch.substring(1) + (hasS ? 's' : '');
+  if (doubleStart && !doubleEnd) return singularMatch.substring(1) + (endsWithS ? 's' : '');
   if (doubleEnd && !doubleStart) return singularMatch.substring(0, singularMatch.length - 1);
   return match;
 }
