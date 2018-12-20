@@ -18,10 +18,6 @@ export default class Pluralizer {
     return this.match.startsWith(STATIC_PATTERN) && this.match.endsWith(STATIC_PATTERN);
   }
 
-  get morphing() {
-    return !this.static;
-  }
-
   get plural() {
     return this.match.endsWith(PLURAL_PATTERN);
   }

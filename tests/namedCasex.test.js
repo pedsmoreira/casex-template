@@ -2,6 +2,21 @@ import namedCasex from 'named-casex';
 import { EOL } from 'os';
 
 describe('namedCasex', () => {
+  it('doesnt break when there are no matches', () => {
+    const text = 'There are no matches here';
+    const transformedText = text;
+
+    expect(namedCasex(text, 'john-doe')).toEqual(transformedText);
+  });
+
+  it('returns the text when no name is provided', () => {
+    const text = 'Should just return it';
+    const transformedText = text;
+
+    expect(namedCasex(text, null)).toEqual(transformedText);
+    expect(namedCasex(text, '')).toEqual(transformedText);
+  });
+
   it('replaces all __name__ occurrences', () => {
     const text = 'Hi, my name is __Na Me__, but you can call me __na--me__ or __NaMe__.';
     const transformedText = 'Hi, my name is John Doe, but you can call me john--doe or JohnDoe.';
