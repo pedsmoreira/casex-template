@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  Empower your templates with a versatile casex convention
+  The <a href="https://github.com/pedsmoreira/battlecry">Battlecry</a> standard for casex naming
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 <p align="center">
 
 <h3 align="center">
-  <a href="https://battle-casex.pedrosm.com/">Documentation</a>
+  <a href="https://battlecry.js.org/battle-casex">Documentation</a>
    | 
   <a href="https://github.com/pedsmoreira/battle-casex/blob/master/CONTRIBUTING.md">Contributing</a>
    | 
