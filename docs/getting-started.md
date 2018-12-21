@@ -4,7 +4,7 @@
 
 As the name suggests project uses [casex](https://github.com/pedsmoreira/casex), an open source library designed to be an `All in one function for transforming word casings`.
 
-While casex is design to apply a pattern for a specific string, `named-casex` focus on getting a template, finding all occurrences of `__name__` and replacing them with the corresponding value.
+While casex is design to apply a pattern for a specific string, `battle-casex` focus on getting a template, finding all occurrences of `__name__` and replacing them with the corresponding value.
 
 Here are a few examples of how it works, considering you're using the name `John Doe`:
 

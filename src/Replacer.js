@@ -2,7 +2,7 @@
 
 import casex from 'casex';
 import Pluralizer from './Pluralizer';
-import { pruneMatch, matches } from './Matcher';
+import { pruneMatch, matches } from './matching';
 
 export default class Replacer {
   name: string;

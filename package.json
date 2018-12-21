@@ -1,13 +1,17 @@
 {
-  "name": "named-casex",
+  "name": "battle-casex",
   "version": "0.0.1",
   "description": "Empower your templates with a versatile casex convention",
-  "main": "src/index.js",
-  "repository": "https://github.com/pedsmoreira/named-casex.git",
+  "main": "dist/battle-casex.js",
+  "umd:main": "dist/battle-casex.umd.js",
+  "module": "dist/battle-casex.mjs",
+  "source": "src/index.js",
+  "repository": "https://github.com/pedsmoreira/battle-casex.git",
   "author": "Pedro Moreira <pedsmoreira@gmail.com>",
   "license": "MIT",
   "files": [
-    "build"
+    "dist",
+    "docs"
   ],
   "keywords": [
     "string",
@@ -15,48 +19,45 @@
     "snakecase",
     "camelcase",
     "formatting",
-    "named-casex",
+    "battle-casex",
     "casex standard"
   ],
   "scripts": {
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:ci": "npm run build && npm run test:coverage",
-    "start": "watch 'npm run build:watch' ./src/",
-    "build": "npm-run-all build:clean build:flow build:rollup build:copy-flow",
-    "build:watch": "npm-run-all build:flow build:rollup",
-    "build:clean": "rm -f build/*",
-    "build:flow": "flow-remove-types ./src/ -d ./build/ --pretty",
-    "build:rollup": "rollup build/index.js --o build/named-casex.js -f umd --name \"named-casex\"",
-    "build:copy-flow": "cp src/index.js build/named-casex.js.flow",
+    "start": "microbundle watch",
+    "build": "npm-run-all build:clean build:microbundle build:copy-flow",
+    "build:clean": "rm -f dist/*",
+    "build:microbundle": "microbundle build",
+    "build:copy-flow": "npm-run-all build:copy-flow-index build:copy-flow-files",
+    "build:copy-flow-index": "cp src/index.js dist/battle-casex.js.flow",
+    "build:copy-flow-files": "flow-copy-source src dist -i index.js",
     "precommit": "lint-staged",
     "prettier": "prettier --write src/**/*.js",
     "flow": "flow",
-    "flow:check": "flow check ./src/",
     "preversion": "npm test",
     "version": "npm run build && git add package.json",
     "postversion": "git push && git push --tags"
   },
   "dependencies": {
-    "babel-core": "^7.0.0-bridge.0",
     "casex": "^3.0.0",
     "pluralize": "^7.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
-    "@babel/plugin-external-helpers": "^7.2.0",
-    "@babel/plugin-transform-flow-strip-types": "^7.2.0",
-    "@babel/preset-env": "^7.2.0",
+    "@babel/plugin-transform-flow-strip-types": "^7.2.3",
+    "@babel/preset-env": "^7.2.3",
+    "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
     "flow-bin": "^0.89.0",
-    "flow-remove-types": "^1.2.3",
+    "flow-copy-source": "^2.0.2",
     "husky": "^1.3.0",
     "jest": "^23.6.0",
     "lint-staged": "^8.1.0",
+    "microbundle": "^0.9.0",
     "npm-run-all": "^4.1.5",
-    "prettier": "^1.15.3",
-    "rollup": "^0.68.1",
-    "watch": "^1.0.2"
+    "prettier": "^1.15.3"
   },
   "lint-staged": {
     "src/**/*.js": [

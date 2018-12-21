@@ -1,11 +1,11 @@
-import namedCasex, { configure } from 'named-casex';
+import { replacePatterns, configure } from '../src';
 
 describe('configure', () => {
   it('allows EOL configuration', () => {
     configure({ eol: ':::' });
 
     const textArray = ['one', 'two', 'three'];
-    const transformedText = namedCasex(textArray, null);
+    const transformedText = replacePatterns(textArray, null);
 
     expect(transformedText).toEqual('one:::two:::three');
   });

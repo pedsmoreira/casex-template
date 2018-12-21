@@ -1,13 +1,11 @@
 // @flow
 
-import { EOL } from 'os';
-
 export type Options = {
   eol: string
 };
 
 export const options: Options = {
-  eol: EOL
+  eol: '\n' // Using EOL from 'os' here would require node bulitins
 };
 
 export function configure(newOptions: Object) {
