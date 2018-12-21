@@ -14,7 +14,7 @@
   <a href="https://travis-ci.org/pedsmoreira/battle-casex"><img src="https://travis-ci.org/pedsmoreira/battle-casex.svg?branch=master"/></a>
   <a href="https://codeclimate.com/github/pedsmoreira/battle-casex/maintainability"><img src="https://api.codeclimate.com/v1/badges/f82cf64419a071632c6e/maintainability" /></a>
   <a href="https://codeclimate.com/github/pedsmoreira/battle-casex/test_coverage"><img src="https://api.codeclimate.com/v1/badges/f82cf64419a071632c6e/test_coverage" /></a>
-<p align="center">
+</p>
 
 <h3 align="center">
   <a href="https://battlecry.js.org/battle-casex">Documentation</a>
