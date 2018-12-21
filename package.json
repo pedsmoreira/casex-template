@@ -41,7 +41,7 @@
     "postversion": "git push && git push --tags"
   },
   "dependencies": {
-    "casex": "^3.0.0",
+    "casex": "ˆ2.0.0 | ^3.0.0",
     "pluralize": "^7.0.0"
   },
   "devDependencies": {
