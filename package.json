@@ -1,7 +1,7 @@
 {
   "name": "battle-casex",
   "version": "0.0.1",
-  "description": "Empower your templates with a versatile casex convention",
+  "description": "The Battlecry standard for casex naming",
   "main": "dist/battle-casex.js",
   "umd:main": "dist/battle-casex.umd.js",
   "module": "dist/battle-casex.mjs",
@@ -19,8 +19,11 @@
     "snakecase",
     "camelcase",
     "formatting",
+    "battlecry",
     "battle-casex",
-    "casex standard"
+    "casex standard",
+    "pluralization",
+    "templating"
   ],
   "scripts": {
     "test": "jest",
