@@ -1,6 +1,5 @@
 // @flow
 
-import casex from 'casex';
 import Replacer from './Replacer';
 
 export default function battleCasex(text: string, name: ?string) {
