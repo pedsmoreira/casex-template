@@ -1,6 +1,6 @@
 {
   "name": "battle-casex",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "The Battlecry standard for casex naming",
   "main": "dist/battle-casex.js",
   "umd:main": "dist/battle-casex.umd.js",
