@@ -1,8 +1,9 @@
 // @flow
 
-export { configure, options } from './configuration';
-export { default as joinLines } from './joinLines';
-export { matches, pruneMatch } from './matching';
-export { default as replacePatterns } from './replacePatterns';
-export { default as Pluralizer } from './Pluralizer';
-export { default as Replacer } from './Replacer';
+import casex from 'casex';
+import Replacer from './Replacer';
+
+export default function battleCasex(text: string, name: ?string) {
+  if (!name) return text;
+  return new Replacer(name, text).replaceAll().text;
+}
