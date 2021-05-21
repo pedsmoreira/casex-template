@@ -1372,7 +1372,7 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-"casex@ˆ2.0.0 | ^3.0.0":
+"casex@>= 2":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/casex/-/casex-3.0.0.tgz#97104bfa93d6535cf4608f32aa80ba87d351b427"
   integrity sha512-fBWw2Hur76NRY92xwgWKV2LoVc423HgxY625Tou+iG1SiZX3aNLT9oMgGz8FuStKv9kjpGxMeG5Kb9ybNnci3w==
