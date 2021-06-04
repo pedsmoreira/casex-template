@@ -17,8 +17,6 @@
 </p>
 
 <h3 align="center">
-  <a href="https://battlecry.js.org/battle-casex">Documentation</a>
-   | 
   <a href="https://github.com/pedsmoreira/battle-casex/blob/master/CONTRIBUTING.md">Contributing</a>
    | 
   <a href="https://github.com/pedsmoreira/battle-casex/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a>
