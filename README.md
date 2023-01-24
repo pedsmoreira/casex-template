@@ -81,7 +81,6 @@ The full documentation is available at [dxtr.dev/casex-template](dxtr.dev/casex-
 
 Casex Template 2.x is not compatible previous versions. If you need previous docs please refer to:
 
-- [v0.x](https://github.com/dxtr-dot-dev/casex-template/tree/0.x)
 - [v1.x](https://github.com/dxtr-dot-dev/casex-template/tree/1.x)
 
 ## License
