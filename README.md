@@ -9,7 +9,7 @@
 <p align="center">
   <a href="https://www.npmjs.org/@dxtr.dev/casex-template"><img src="https://img.shields.io/npm/v/@dxtr.dev/casex-template.svg"/></a>
   <a href="https://github.com/dxtr-dot-dev/casex-template/actions"><img src="https://github.com/dxtr-dot-dev/casex-template/actions/workflows/tests.yml/badge.svg" alt="Build Status"></a>
-  <a href="https://codeclimate.com/github/dxtr-dot-dev/casex-template/maintainability"><img src="#" /></a>
+  <a href="https://codeclimate.com/github/dxtr-dot-dev/casex-template/maintainability"><img src="https://api.codeclimate.com/v1/badges/cd5cc516bd31b04783af/maintainability" /></a>
   <a href="https://www.npmjs.org/@dxtr.dev/casex-template"><img src="https://img.shields.io/npm/l/@dxtr.dev/casex-template" alt="License"></a>
 </p>
 
