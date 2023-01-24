@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  Simple, self expressive template engine for scaffolding files based on <a href="https://dx.dev/casex">Casex</a>.
+  Simple, self expressive template engine for scaffolding files based on <a href="https://dx.dev/casex">casex</a>.
 </p>
 
 <p align="center">
@@ -21,9 +21,9 @@ If you like this project, consider checking out our other apps and tools at [htt
 
 ## About Casex Template
 
-Casex Template is a simple template engine that applies [Casex](https://dx.dev/casex) to all occurances in a template.
+Casex Template is a simple template engine that applies [the casex pattern](https://dx.dev/casex) to all occurances in a template.
 
-Templating engines are often made to be used in production and are very feature rich, including the option to loop through data, conditionals and more. Casex Template is very different from that, it was created to be used for scaffolding files and doing one simple task: replacing names and applying string style cases & pluralization on templates and file names.
+Often creating templates feels tedious and time consuming, we wanted to create an engine that lets you pretty much copy an example file, replace a few `__name__` patterns and you should be good to go.
 
 Here's a simple example of what a template might look like:
 
