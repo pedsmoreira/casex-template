@@ -1,56 +1,89 @@
 <p align="center">
-  <a href="https://battlecry.pedrosm.com">
-    <img src="./docs/assets/logo-text.png" alt="Battlecry" width="256">
-  </a>
+  <img src="./docs/assets/casex-template-cover.jpg" alt="CASEX">
 </p>
 
 <p align="center">
-  The <a href="https://github.com/pedsmoreira/battlecry">Battlecry</a> standard for casex naming
+  Simple, self expressive template engine for scaffolding files based on <a href="https://dx.dev/casex">Casex</a>.
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.org/package/battle-casex"><img src="https://img.shields.io/npm/v/battle-casex.svg"/></a>
-  <a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg"/></a>
-  <a href="https://travis-ci.org/pedsmoreira/battle-casex"><img src="https://travis-ci.org/pedsmoreira/battle-casex.svg?branch=master"/></a>
-  <a href="https://codeclimate.com/github/pedsmoreira/battle-casex/maintainability"><img src="https://api.codeclimate.com/v1/badges/f82cf64419a071632c6e/maintainability" /></a>
-  <a href="https://codeclimate.com/github/pedsmoreira/battle-casex/test_coverage"><img src="https://api.codeclimate.com/v1/badges/f82cf64419a071632c6e/test_coverage" /></a>
+  <a href="https://www.npmjs.org/@dxtr.dev/casex-template"><img src="https://img.shields.io/npm/v/@dxtr.dev/casex-template.svg"/></a>
+  <a href="https://github.com/dxtr-dot-dev/casex-template/actions"><img src="https://github.com/dxtr-dot-dev/casex-template/actions/workflows/tests.yml/badge.svg" alt="Build Status"></a>
+  <a href="https://codeclimate.com/github/dxtr-dot-dev/casex-template/maintainability"><img src="#" /></a>
+  <a href="https://www.npmjs.org/@dxtr.dev/casex-template"><img src="https://img.shields.io/npm/l/@dxtr.dev/casex-template" alt="License"></a>
 </p>
 
-<h3 align="center">
-  <a href="https://github.com/pedsmoreira/battle-casex/blob/master/CONTRIBUTING.md">Contributing</a>
-   | 
-  <a href="https://github.com/pedsmoreira/battle-casex/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a>
-</h3>
+## Brought to you by [DXTR.DEV](https://dxtr.dev)
 
-# How it works
+DXTR was founded to create tools and apps that improve developer experience and productivity.
 
-As the name suggests project uses [casex](https://github.com/pedsmoreira/casex), an open source library designed to be an `All in one function for transforming word casings`.
+If you like this project, consider checking out our other apps and tools at [https://dxtr.dev](https://dxtr.dev).
 
-While casex is design to apply a pattern for a specific string, `battle-casex` focus on getting a template, finding all occurrences of `__name__` and replacing them with the corresponding value.
+## About Casex Template
 
-Here are a few examples of how it works, considering you're using the name `John Doe`:
+Casex Template is a simple template engine that applies [Casex](https://dx.dev/casex) to all occurances in a template.
 
-- `__name__`: johndoe
-- `__naMe__`: johnDoe
-- `__NaMe__`: JohnDoe
-- `__na-me__`: john-doe
-- `__na me__`: john doe
+Templating engines are often made to be used in production and are very feature rich, including the option to loop through data, conditionals and more. Casex Template is very different from that, it was created to be used for scaffolding files and doing one simple task: replacing names and applying string style cases & pluralization on templates and file names.
 
-## Pluralization and singularization
+Here's a simple example of what a template might look like:
 
-BattleCry provides pluralization and singularization out of the box with [pluralize](https://github.com/blakeembrey/pluralize).
+```tsx
+// __na-me__-page.ts
 
-To use this feature, instead of `__name__`, use `_name_`, with one underscore. Here are a few examples of how it works:
+type __NaMe__PageProps {
+  _naMe_s: _NaMe_[]
+}
 
-- Regulars: `user`
-  - `_name_`: user
-  - `_name_s`: users
-- Irregulars: `person`
-  - `_name_`: person
-  - `_name_s`: people
-- Composed names: `user name`
-  - `_na me_`: user name
-  - `_na me_s`: user names
-- Names in the plural: `users`
-  - `_na me_`: user
-  - `_na me_s`: users
+export function __NaMe__Page({ _naMe_s }: __NaMe__PageProps) {
+  return (
+    <div>
+      <header>
+        Hello there - this file was scaffolded.
+      </header>
+
+      <div>
+        Here's the list of _na me_s you've given me: {JSON.stringify(_naMe_s)}
+      </div>
+    </div>
+  );
+}
+```
+
+And if we apply the name `foo bar` it becomes:
+
+```tsx
+// foo-bar-page.ts
+
+type FooBarPageProps {
+  fooBars: FooBar[]
+}
+
+export function FooBarPage({ fooBars }: FooBarPageProps) {
+  return (
+    <div>
+      <header>
+        Hello there - this file was scaffolded.
+      </header>
+
+      <div>
+        Here's the list of foo bars you've given me: {JSON.stringify(fooBars)}
+      </div>
+    </div>
+  );
+}
+```
+
+## Documentation
+
+The full documentation is available at [dxtr.dev/casex-template](dxtr.dev/casex-template)
+
+## Previous versions
+
+Casex Template 2.x is not compatible previous versions. If you need previous docs please refer to:
+
+- [v0.x](https://github.com/dxtr-dot-dev/casex-template/tree/0.x)
+- [v1.x](https://github.com/dxtr-dot-dev/casex-template/tree/1.x)
+
+## License
+
+Casex Template is open-sourced software licensed under the [MIT License](./LICENSE.md).
