@@ -1,7 +1,7 @@
 {
   "name": "@dxtr.dev/casex-template",
   "type": "module",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Templating engine based on the casex pattern",
   "main": "dist/casex-template.js",
   "types": "dist/casex-template.d.ts",
