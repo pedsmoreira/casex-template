@@ -2,12 +2,13 @@ import { casexTemplatePatternFromString } from "./_internal/casex-template-patte
 import { applyCasexTemplatePatternToText } from "./_internal/apply-casex-template-pattern-to-text";
 import { matchCasexTemplatePatternsInText } from "./_internal/match-casex-template-patterns-in-text";
 
-interface CasexTemplateArgs {
+export function casexTemplate({
+	name,
+	text,
+}: {
 	name: string;
 	text: string;
-}
-
-export function casexTemplate({ name, text }: CasexTemplateArgs): string {
+}): string {
 	let transformedText = text;
 
 	const replace = (patternString: string, index: number) => {
