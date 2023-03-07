@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://dxtr.dev/cover/casex-template-cover.jpg" alt="CASEX TEMPLATE">
+  <img src="https://dxtr.dev/casex-template/casex-template-cover.jpg" alt="CASEX TEMPLATE">
 </p>
 
 <p align="center">

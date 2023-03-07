@@ -2,7 +2,7 @@
   "name": "@dxtr.dev/casex-template",
   "type": "module",
   "version": "2.0.1",
-  "description": "Templating engine based on the casex pattern",
+  "description": "Simple, self expressive template engine for scaffolding files based on casex",
   "main": "dist/casex-template.js",
   "types": "dist/casex-template.d.ts",
   "homepage": "https://dxtr.dev/casex-template",
