@@ -17,11 +17,11 @@
 
 Casex Template is a simple template engine that applies [the casex pattern](https://dx.dev/casex) to all occurances in a template.
 
-Often creating templates feels tedious and time consuming, we wanted to create an engine that lets you pretty much copy an example file, replace a few `__name__` patterns and you should be good to go.
+Often creating templates feels tedious and time consuming, I wanted to create an engine that lets you pretty much copy an example file, replace a few `__name__` patterns and you should be good to go.
 
 ## Official Documentation
 
-Documenation for Casex Template can be found at [dxtr.dev/casex-template](dxtr.dev/casex-template).
+Documenation for Casex Template can be found at [dxtr.dev/casex-template](https://dxtr.dev/casex-template).
 
 ## License
 
