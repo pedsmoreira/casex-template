@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  Simple, self expressive template engine for scaffolding files based on <a href="https://dx.dev/casex">casex</a>.
+  Simple, self expressive template engine for scaffolding files based on <a href="https://dxtr.dev/casex">casex</a>.
 </p>
 
 <p align="center">
