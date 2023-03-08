@@ -15,7 +15,7 @@
 
 ## Introduction
 
-Casex Template is a simple template engine that applies [the casex pattern](https://dx.dev/casex) to all occurances in a template.
+Casex Template is a simple template engine that applies [the casex pattern](https://dxtr.dev/casex) to all occurances in a template.
 
 Often creating templates feels tedious and time consuming, I wanted to create an engine that lets you pretty much copy an example file, replace a few `__name__` patterns and you should be good to go.
 
