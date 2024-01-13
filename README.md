@@ -4,7 +4,7 @@ Simple, self expressive template engine for scaffolding files based on [casex](h
 
 ## Introduction
 
-`casex-template` is a simple template engine that applies the [casex](https://github.com/pedsmoreira/casex) pattern to
+_casex-template_ is a simple template engine that applies the [casex](https://github.com/pedsmoreira/casex) pattern to
 all
 occurrences in a template.
 
@@ -31,7 +31,7 @@ casexTemplate({text, name: 'cool component'})
 As the name suggests project uses [casex](https://github.com/pedsmoreira/casex), an open source library designed to be
 an `All in one function for transforming word casings`.
 
-While `casex` is design to apply a pattern for a specific string, `casex-template` focuses on getting a template,
+While `casex` is design to apply a pattern for a specific string, _casex-template_ focuses on getting a template,
 finding
 all occurrences of `__name__` and replacing them with the corresponding value.
 
@@ -45,7 +45,7 @@ Here are a few examples of how it works, considering you're using the name `John
 
 ## Pluralization and singularization
 
-`casex-template` provides pluralization and singularization out of the box
+_casex-template_ provides pluralization and singularization out of the box
 with [pluralize](https://github.com/blakeembrey/pluralize).
 
 To use this feature, instead of `__name__`, use `_name_`, with one underscore. Here are a few examples of how it works:
@@ -65,4 +65,4 @@ To use this feature, instead of `__name__`, use `_name_`, with one underscore. H
 
 ## License
 
-`casex-template` is open-sourced software licensed under the [MIT License](./LICENSE.md).
+_casex-template_ is open-sourced software licensed under the [MIT License](./LICENSE.md).
